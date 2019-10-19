@@ -21,5 +21,5 @@ def is_int(number):
 
 
 tab = [1, 2, 4, 15, 210, 1000, 10, '10', '13.']
-list_comp = [int(number) for number in tab if number < 200 and is_int(number)]
+list_comp = [int(number) for number in tab if is_int(number) and int(number) < 200]
 print(list_comp)

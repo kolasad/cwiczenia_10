@@ -26,29 +26,25 @@ list_comp = [int(number) for number in tab if is_int(number)]
 print(list_comp)
 
 
-# integers = get_numbers(tab)
-# print([x for x in integers if x < 13])
-# print([x if x < 13 else None for x in integers])
-#
-# # napisac funkcje zwracajaca liczby calkowite w list comprehenision
-# print([x for x in range(10)])
+integers = get_numbers(tab)
+print([x for x in integers if x < 13])
+print([x if x < 13 else None for x in integers])
+
+# napisac funkcje zwracajaca liczby calkowite w list comprehenision
+print([x for x in range(10)])
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# [A B C    D E F G    H I J]
-# [A B C    D E F G    H I J]
-# [A B C    D E F G    H I J]
-# [A B C    D E F G    H I J]
-# [A B C    D E F G    H I J]
-# [A B C    D E F G    H I J]
+# w samolocie chcemt ustalic ile jest mozliwosci posadzenia rodziny trzyosobowej na miejscach znajdujacych sie obok siebie
+# schemat samolotu:
+#     [A B C    D E F G    H I J]
+#     [A B C    D E F G    H I J]
+#     [A B C    D E F G    H I J]
+#     [A B C    D E F G    H I J]
+# dodac parametr dlugosci samolotu (ilosci rzedow)
+tab =  [
+    [0, 0, 1, 0, 0, 0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
+    [1, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+    [1, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+]
+# result = 6
